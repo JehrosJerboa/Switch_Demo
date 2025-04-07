@@ -9,8 +9,7 @@ int main() {
     * First Demo - using a standard switch statement for each case
     * Determining the vowels of a sentence.
     */
-    string sentence = "This is just a sample sentence to use for testing. It is not anything";
-    sentence += " special. A small elphant named Ellie and Oscar the otter here for testing.";
+    string sentence = "Testing a vowel rEader";
 
     unsigned int num_vowels = 0,
         num_consonants = 0,
@@ -72,18 +71,38 @@ int main() {
     cout << "Choose your operation:\n1. +\n2. -\n3. *\n4. /\n\n: ";
     cin >> op;
     switch (op) {
-    case '+':
-
+    case '1':
+    case '+': {
+        int x, y;
+        cout << "Enter the two values: ";
+        cin >> x >> y;
+        cout << x << " + " << y << " = " << (x + y) << endl;
         break;
-    case '-':
-
+    }
+    case '2':
+    case '-': {
+        int x, y;
+        cout << "Enter the two values: ";
+        cin >> x >> y;
+        cout << x << " - " << y << " = " << (x - y) << endl;
         break;
-    case '*':
-
+    }
+    case '3':
+    case '*': {
+        int x, y;
+        cout << "Enter the two values: ";
+        cin >> x >> y;
+        cout << x << " * " << y << " = " << (x * y) << endl;
         break;
-    case '/':
-
+    }
+    case '4':
+    case '/': {
+        int x, y;
+        cout << "Enter the two values: ";
+        cin >> x >> y;
+        cout << x << " / " << y << " = " << (static_cast<double>(x) / y) << endl;
         break;
+    }
     default:
         cout << "Invalid operation chosen.\n";
         exit(1);
